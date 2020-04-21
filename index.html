@@ -4,24 +4,162 @@
     <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Future Portfolio Page</title> 
-        <style>
-            .pStyle {
-                color: green;
-                font-size: 16px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
-            #heading {
-                color: turquoise;
-            }
-            .circleImage {
-                border-radius: 50%;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- description section -->
+        <meta name="viewport" content="width=device-width, intital-scale=1, shrink-to-fit=no">
+        <title>Future Portfolio Page</title>
+        <link rel="stylesheet" href="assests/css/homePage.css" type="text/css">
+        <link rel="stylesheet" href="assests/css/defaultStyle.css" type="text/css">
+        <!-- boostrap stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/boostrap.min.css" 
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <head>
+    <body data-gr-c-s-loaded="true">
+        <!-- BS navbar -->
+        <nav class="navbar navbar-expand-lg customNavBg">
+            <a class="navbar-brand" href="index.html">
+                <b>VCD 5D</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-
+            target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cssTraining.html">Css Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="floatPositionActivity.html">Float Activity</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Contact</a> 
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="mailto: caroberts@cpp.edu">Email</a>
+                            <a class="dropdown-item" href="https://github.com/caroberts0513/caroberts0513.github.io"
+                            target="_blank">Github page</a>
+                            <a class="dropdown-item" href="https://caroberts0513.github.io/" target="
+                            _blank">VCD 5D website</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Search" aria-label=
+                    "Search">
+                </form>
+            </div>
+        </nav>
+        <!-- content container -->
+        <div class="container-fluid">
+            <!-- bio title -->
+            <section class="sectionTitle">
+                <h2>About Me</h2>
+                <hr>
+            </section>
+            <!-- description section-->
+            <div class="row align-items-center customDescriptionSection">
+                <div class="col-12 col-md-4 avataCol justify-content-center">
+                    <a href="contact.html">
+                        <img class="circleImage" src="assets/images/20200416_172614.jpg" height="auto"
+                        width="200">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 bioTxt">
+                <p>I am a future UX/UI Designer and Developer</p>
+                <p>
+                    "
+                    
+                                Hi my name is Catherine Roberts! I love walruses and basically anything fat and fluffy. 
+                                        I have a dog named Daisy she is a treehugger coonhound(actual name) and I can't wait for when I 
+                                        move out and can adopt atleast 50 dogs who need a loving home. 
+                                "
+                </p>
+            </div>
+            <div class="col-12 col-md-4 avatacol justify-content-center">
+                <a href="contact.html">
+                    <img class="circleImage" src="assests/images/20200416_172614.jpg"
+                    height="auto" width="200">
+                </a>
+            </div>
+        </div>
+        <!-- project title -->
+        <section class="sectionTitle">
+            <h2>Projects Gallery</h2>
+            <hr>
+        </section>
+        <!-- projects card section -->
+        <div class="row justify-content-center projectGallerySection">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="http://chocolatewithgrace.com/wp-content/uploads/2016/06/Salted-Caramel-Pretzel-Cupcakes-2.jpg"
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cupcake Project</h5>
+                        <p class="card-text">
+                            "text on project that builds on card title and can make up 
+                                the cards content."
+                        </p>
+                        <a href="#" class="btn projectCardBtn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.3ztTE7dCUcDC3TTbq7F2BgHaEo&pid=Api&P=0&w=277&h=174"
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruit Project</h5>
+                        <p class="card-text">
+                            "text on project that builds on card title and can make up 
+                            the cards content."
+                        </p>
+                        <a href="#" class="btn projectCardBtn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://www.viewmastercms.com/assets/VMAPP_Universal_Furniture/image/ic/orig/311_CD_RS01_73_chairs_u_vm_001.jpg"
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Furniture Project</h5>
+                        <p class="card-text">
+                            "text on project that builds on card title and can make up 
+                            the cards content."
+                        </p>
+                        <a href="#" class="btn projectCardBtn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="http://wallpapercave.com/wp/C9SA6TC.jpg"
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Panda Project</h5>
+                        <p class="card-text">
+                            "text on project that builds on card title and can make up 
+                            the cards content."
+                        </p>
+                        <a href="#" class="btn projectCardBtn">View Project</a>
+                    </div>
+                </div>
+        </div>
+        <!-- pseudo classes warm up activity-->
+        <!-- <a class="tesla-link" target="_blank" href="https://www.tesla.com/">Tesla website</a> -->
+        </div>
+        <!-- fixed footer -->
+
+
+
+
+
+
+
         <h1>Student Bio</h1>
         <h3 class="pStyle">Catherine Roberts</h3>
         <img class="circleImage" src="../images/mePic.jpeg" width="200" height="auto">
@@ -54,3 +192,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
