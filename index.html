@@ -11,8 +11,10 @@
         <!-- boostrap stylesheet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/boostrap.min.css" 
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        <!-- FontAwesome-->
+        <script src="https://kit.fontawesome.com/938a18ead6.js" crossorigin="anonymous"></script>
     <head>
-    <body data-gr-c-s-loaded="true">
+    <body  id="topPage" data-spy="scroll" data-offset="50" data-target="topPage">
         <!-- BS navbar -->
         <nav class="navbar navbar-expand-lg customNavBg">
             <a class="navbar-brand" href="index.html">
@@ -95,72 +97,31 @@
         <div class="row justify-content-center projectGallerySection">
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="assests/images/cupcakes.jpg"
-                    class="card-img-top" alt="...">
+                    <img src="assests/images/cupcakes.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Cupcake Project</h5>
-                        <p class="card-text">
-                            "text on project that builds on card title and can make up 
-                                the cards content."
-                        </p>
-                        <a href="#" class="btn projectCardBtn">View Project</a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn projectCardBtn" data-toggle="modal" data-target="#cupcakeModal">View
+                            Project</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                    <img src="assests/images/fruit.jpg"
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Fruit Project</h5>
-                        <p class="card-text">
-                            "text on project that builds on card title and can make up 
-                            the cards content."
-                        </p>
-                        <a href="#" class="btn projectCardBtn">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                    <img src="assests/images/furniture.jpeg"
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Furniture Project</h5>
-                        <p class="card-text">
-                            "text on project that builds on card title and can make up 
-                            the cards content."
-                        </p>
-                        <a href="#" class="btn projectCardBtn">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                    <img src="assests/images/panda.jpg"
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Panda Project</h5>
-                        <p class="card-text">
-                            "text on project that builds on card title and can make up 
-                            the cards content."
-                        </p>
-                        <a href="#" class="btn projectCardBtn">View Project</a>
-                    </div>
-                </div>
         </div>
         <!-- cupcake project modal -->
         <!-- modal -->
-        <div class="modal fade customProjectModal" id="cupcakeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
+        <div class="modal fade customProjectModal" id="cupcakeModal" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
                         <!-- Carousels -->
                         <div id="carouselExampleIndicators" class="carousel slide customProjectCarousel" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -183,11 +144,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -210,16 +173,17 @@
             </div>
         </div>
         <!-- fruit project modal -->
-        <div class="modal fade customProjectModal" id="fruitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalScrollableTitle">Fruit Project</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
+        <div class="modal fade customProjectModal" id="fruitModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Fruit Project</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
                         <p>this is fruit project that i took multiple fruit pictures......</p>
                         <!-- casousel images -->
                         <div id="fruitCarousel" class="carousel slide customProjectCarousel" data-ride="carousel">
